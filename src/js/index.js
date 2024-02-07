@@ -1,3 +1,7 @@
-import { sayHello } from './demo';
+import { passwordLenghtElement, buttonClickElement, options } from './dom';
 
-sayHello();
+import { printRandomPassword, getLength, changeAlgorithm } from './functions';
+
+passwordLenghtElement.addEventListener('input', getLength);
+buttonClickElement.addEventListener('click', printRandomPassword);
+options.addEventListener('change', changeAlgorithm);
